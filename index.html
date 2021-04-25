@@ -9,23 +9,62 @@
   <title>HomeWork 25-04-2021</title>
 </head>
 <body>
-  <section class="task">
-    <p class="task-text">
-      Создание кнопок
-    </p>
-    <ol>
-      <li>
-        Создать кнопку, у которой в атрибуте data-counter записано число. При нажатии на кнопку число должно уменьшаться. Когда счетчик доходит до 0, обработчик события должен удалиться. Значение счетчика должно отображаться в innerText кнопки.
-      </li>
-      <li>
+  <section class="wrapper">
+    <article>
+      <h2 class="task-heading">Задание 1</h2>
+      <p class="task-description">
+          Создать кнопку, у которой в атрибуте data-counter записано число. При нажатии на кнопку число должно уменьшаться. Когда счетчик доходит до 0, обработчик события должен удалиться. Значение счетчика должно отображаться в innerText кнопки.
+      </p>
+      <p class="task-info">
+        <span class="warning">Внимание!</span> Не рекомендуется изменять значение <span class="warning">data-counter</span> через разметку для 1 варианта. Для второго варианта можно делать что угодно со
+        значением data-counter.
+      </p>
+      <div class="task-block">
+        <div class="counter-block">
+          <h2 class="counter-title">Счетчики в которых используется data-counter</h2>
+          <div class="row">
+            <button class="button-counter change-data" data-counter="0">5</button>
+            <button class="button-counter change-data" data-counter="-6">5</button>
+            <button class="button-counter change-data" data-counter="10">5</button>
+            <button class="button-counter change-data" data-counter="mystery">5</button>
+          </div>
+        </div>
+        <div class="counter-block">
+          <h2 class="counter-title">Счетчики в которых используется замыкание</h2>
+          <div class="row">
+            <button class="button-counter save-data" data-counter="0">5</button>
+            <button class="button-counter save-data" data-counter="-6">5</button>
+            <button class="button-counter save-data" data-counter="6">5</button>
+            <button class="button-counter save-data" data-counter="qwerty">5</button>
+          </div>
+        </div>
+        </div>
+    </article>
+    
+    <article>
+      <h2 class="task-heading">Задание 2</h2>
+      <p class="task-description">
         Написать функцию getRandomColor, которая будет рандомно генерировать строку с rgb цветом (Math.Random от 0 до 255 для каждого цвета). При каждом нажатии на кнопку цвет фона в ней должен меняться рандомно.
-      </li>
-    </ol>
-    <div class="task-block">
-      <button id="button-counter" data-counter="5"></button>
-    </div>
+      </p>
+      <button id="change-color-btn">#00FF00</button>
+    </article>
+
+    <article>
+      <h2 class="task-heading">Задание 3</h2>
+      <p class="task-description">
+        Создайте кнопку, которая при нажатии будет отображать в теге img рандомную картинку.
+        Получайте рандомную картинку с помощью Lorem Picsum (ссылку прикрепил). 
+        Обратите внимание на раздел Advanced Usage на сайте. (Там показано, как можно получить несколько различных изображений по одной ссылке)
+      </p>
+      <button id="change-image-btn">Get Random Image</button>
+      <div class="image-wrapper">
+        <img class="image" src="https://picsum.photos/200" alt="some-image">
+      </div>
+    </article>
+
   </section>
-  <script src="./assets/js/task-1-1.js"></script>
-  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/task-1.js"></script>
+  <script src="./assets/js/task-2.js"></script>
+  <script src="./assets/js/task-3.js"></script>
 </body>
 </html>
